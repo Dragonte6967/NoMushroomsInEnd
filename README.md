@@ -1,0 +1,1 @@
+Prevent player from planting mushrooms in the END
