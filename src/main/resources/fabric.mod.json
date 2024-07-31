@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "nomushroomsinend",
+  "version": "${version}",
+  "name": "NoMushroomsInEnd",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/nomushroomsinend/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "top.dragonte.nomushroomsinend.Nomushroomsinend"
+    ]
+  },
+  "mixins": [
+    "nomushroomsinend.mixins.json",
+    {
+      "config": "nomushroomsinend.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
